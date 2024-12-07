@@ -17,13 +17,13 @@ docker build --tag access2sql .
 Run docker image and connect database file via volume
 
 ```sh
-docker run --rm -v "$./accessDir/:/data/" access2sql myDatabase.accdb > output.sql
+docker run --rm -v "./accessDir/:/data/" access2sql myDatabase.accdb > output.sql
 ```
 
 or with output database type
 
 ```sh
-docker run --rm -v "$./accessDir/:/data/" access2sql myDatabase.accdb mysql > output.sql
+docker run --rm -v "./accessDir/:/data/" access2sql myDatabase.accdb mysql > output.sql
 ```
 
 ### Where
